@@ -43,7 +43,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 12
+  serializedVersion: 11
   m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
@@ -98,8 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: c2d8f298f8409f44ab4fc3573d765fb3,
-    type: 2}
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -119,8 +118,6 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
-    maxJobWorkers: 0
-    preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: e5515300205a65d489d818473f8cc217, type: 2}
@@ -390,8 +387,7 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 791172626188499274, guid: c54bb9871bff7284daf8789e14cd81d0, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c54bb9871bff7284daf8789e14cd81d0, type: 3}
 --- !u!1001 &44399062
 PrefabInstance:
@@ -1076,8 +1072,7 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 50
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6239657629522178263, guid: f24f61a9532434045b62733cb2dad4a2, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f24f61a9532434045b62733cb2dad4a2, type: 3}
 --- !u!1 &157415275
 GameObject:
@@ -1141,7 +1136,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1166,7 +1160,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &157415279
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1773,8 +1766,7 @@ PrefabInstance:
       propertyPath: m_text
       value: Maddie
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7004864305636596730, guid: fc40c6e01e1bab4418c079fcbf791f6f, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc40c6e01e1bab4418c079fcbf791f6f, type: 3}
 --- !u!1001 &264674090
 PrefabInstance:
@@ -2022,8 +2014,7 @@ PrefabInstance:
       propertyPath: m_text
       value: Erika
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7004864305636596730, guid: fc40c6e01e1bab4418c079fcbf791f6f, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc40c6e01e1bab4418c079fcbf791f6f, type: 3}
 --- !u!4 &272921892 stripped
 Transform:
@@ -4638,8 +4629,7 @@ PrefabInstance:
       propertyPath: m_text
       value: Annika <3
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7004864305636596730, guid: fc40c6e01e1bab4418c079fcbf791f6f, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc40c6e01e1bab4418c079fcbf791f6f, type: 3}
 --- !u!114 &633172624 stripped
 MonoBehaviour:
@@ -5318,8 +5308,7 @@ PrefabInstance:
       propertyPath: m_lineOffset
       value: 0.7474365
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8231068744856772779, guid: 0889b564a64f84d42a9abf098b79255e, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0889b564a64f84d42a9abf098b79255e, type: 3}
 --- !u!4 &706697041 stripped
 Transform:
@@ -6005,8 +5994,7 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 791172626188499274, guid: c54bb9871bff7284daf8789e14cd81d0, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c54bb9871bff7284daf8789e14cd81d0, type: 3}
 --- !u!114 &758124724 stripped
 MonoBehaviour:
@@ -6368,6 +6356,7 @@ GameObject:
   m_Component:
   - component: {fileID: 825868433}
   - component: {fileID: 825868436}
+  - component: {fileID: 825868435}
   - component: {fileID: 825868434}
   m_Layer: 0
   m_Name: Text (TMP)
@@ -6410,7 +6399,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6486,6 +6474,14 @@ MonoBehaviour:
   m_maskType: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+--- !u!222 &825868435
+CanvasRenderer:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825868432}
+  m_CullTransparentMesh: 0
 --- !u!23 &825868436
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6501,7 +6497,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6526,7 +6521,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1001 &838012784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7170,8 +7164,7 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 791172626188499274, guid: c54bb9871bff7284daf8789e14cd81d0, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c54bb9871bff7284daf8789e14cd81d0, type: 3}
 --- !u!4 &889649781 stripped
 Transform:
@@ -7377,6 +7370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 919646416}
   - component: {fileID: 919646419}
+  - component: {fileID: 919646418}
   - component: {fileID: 919646417}
   m_Layer: 0
   m_Name: Text (TMP)
@@ -7419,7 +7413,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7495,6 +7488,14 @@ MonoBehaviour:
   m_maskType: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+--- !u!222 &919646418
+CanvasRenderer:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919646415}
+  m_CullTransparentMesh: 0
 --- !u!23 &919646419
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7510,7 +7511,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -7535,7 +7535,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &940537223
 GameObject:
   m_ObjectHideFlags: 0
@@ -7776,8 +7775,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: man-cult_Rig
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3373588469646439580, guid: acb6db63d674c634b8ba2566922fbb01, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acb6db63d674c634b8ba2566922fbb01, type: 3}
 --- !u!4 &941487636 stripped
 Transform:
@@ -7826,7 +7824,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4204080227342600, guid: 074700f32b31a43309b09f3a7802af1d, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4204080227342600, guid: 074700f32b31a43309b09f3a7802af1d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8291,7 +8289,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8316,7 +8313,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1025257818
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8505,8 +8501,7 @@ PrefabInstance:
       propertyPath: m_text
       value: Maggie
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7004864305636596730, guid: fc40c6e01e1bab4418c079fcbf791f6f, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc40c6e01e1bab4418c079fcbf791f6f, type: 3}
 --- !u!4 &1061343491 stripped
 Transform:
@@ -9236,7 +9231,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -9261,7 +9255,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1135412988
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9576,8 +9569,7 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Killable
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3373588469646439580, guid: acb6db63d674c634b8ba2566922fbb01, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acb6db63d674c634b8ba2566922fbb01, type: 3}
 --- !u!1001 &1184850641
 PrefabInstance:
@@ -10409,7 +10401,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -11932,8 +11923,7 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 791172626188499274, guid: c54bb9871bff7284daf8789e14cd81d0, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c54bb9871bff7284daf8789e14cd81d0, type: 3}
 --- !u!1 &1503266056
 GameObject:
@@ -12995,8 +12985,7 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 791172626188499274, guid: c54bb9871bff7284daf8789e14cd81d0, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c54bb9871bff7284daf8789e14cd81d0, type: 3}
 --- !u!4 &1622926508 stripped
 Transform:
@@ -13475,7 +13464,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -13500,7 +13488,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1674197839
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -13724,8 +13711,7 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 791172626188499274, guid: c54bb9871bff7284daf8789e14cd81d0, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c54bb9871bff7284daf8789e14cd81d0, type: 3}
 --- !u!1001 &1701255324
 PrefabInstance:
@@ -14507,8 +14493,7 @@ PrefabInstance:
       propertyPath: m_text
       value: Lily
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7004864305636596730, guid: fc40c6e01e1bab4418c079fcbf791f6f, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc40c6e01e1bab4418c079fcbf791f6f, type: 3}
 --- !u!4 &1806149747 stripped
 Transform:
@@ -14982,8 +14967,7 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 791172626188499274, guid: c54bb9871bff7284daf8789e14cd81d0, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c54bb9871bff7284daf8789e14cd81d0, type: 3}
 --- !u!1001 &1861113509
 PrefabInstance:
@@ -16222,8 +16206,7 @@ PrefabInstance:
       propertyPath: m_text
       value: Alyson
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7004864305636596730, guid: fc40c6e01e1bab4418c079fcbf791f6f, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc40c6e01e1bab4418c079fcbf791f6f, type: 3}
 --- !u!1001 &2070178113
 PrefabInstance:
@@ -16391,6 +16374,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2090304322}
   - component: {fileID: 2090304325}
+  - component: {fileID: 2090304324}
   - component: {fileID: 2090304323}
   m_Layer: 0
   m_Name: Text (TMP)
@@ -16433,7 +16417,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -16509,6 +16492,14 @@ MonoBehaviour:
   m_maskType: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+--- !u!222 &2090304324
+CanvasRenderer:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090304321}
+  m_CullTransparentMesh: 0
 --- !u!23 &2090304325
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16524,7 +16515,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -16549,7 +16539,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1001 &2091286971
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17140,8 +17129,7 @@ PrefabInstance:
       propertyPath: m_text
       value: Nick
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6239657629522178263, guid: f24f61a9532434045b62733cb2dad4a2, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f24f61a9532434045b62733cb2dad4a2, type: 3}
 --- !u!1001 &2149845604840139427
 PrefabInstance:
@@ -17353,8 +17341,7 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 791172626188499274, guid: c54bb9871bff7284daf8789e14cd81d0, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c54bb9871bff7284daf8789e14cd81d0, type: 3}
 --- !u!1001 &8758394366250601791
 PrefabInstance:
